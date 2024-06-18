@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlinStudy">
         <activity
+            android:name=".activity.ScaleRotateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MultipleTouchActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SlideDirectionActivity"
             android:exported="false" />
         <activity

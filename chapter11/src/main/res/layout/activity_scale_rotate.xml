@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScaleRotateActivity">
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="请两指同时按压并缩放或旋转，再观察手势结果"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+    <com.jpc.chapter11.widget.MultiTouchView
+        android:id="@+id/mtv_gesture"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        android:layout_height="400dp"
+        android:background="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

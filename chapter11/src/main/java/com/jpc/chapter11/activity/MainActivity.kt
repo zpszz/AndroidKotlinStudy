@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity(), OnClickListener{
         binding.btnSignature.setOnClickListener(this)
         binding.btnClickLong.setOnClickListener(this)
         binding.btnSlideDirection.setOnClickListener(this)
+        binding.btnScaleRotate.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
         when(v?.id){
@@ -73,6 +74,10 @@ class MainActivity : AppCompatActivity(), OnClickListener{
             }
             binding.btnSlideDirection.id -> {
                 val intent = Intent(this, SlideDirectionActivity::class.java)
+                startActivity(intent)
+            }
+            binding.btnScaleRotate.id -> {
+                val intent = Intent(this, ScaleRotateActivity::class.java)
                 startActivity(intent)
             }
         }
