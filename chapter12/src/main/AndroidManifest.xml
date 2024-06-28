@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlinStudy">
         <activity
+            android:name=".activity.GifActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.FrameAnimActivity"
             android:exported="false" />
         <activity
